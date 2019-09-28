@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="test">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ut_main.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ut_ring_buf.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ut_pingpong_buf.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ut_list.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ut_linked_hash_map.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ut_fast_buf_splitter.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ut_dlist.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ut_buf_writer.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ut_buf_splitter.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cmockery.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ut_algo.c">
+      <Filter>test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ut_header.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cmockery.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chaos\cs_base.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chaos\cs_base_types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chaos\cs_buf_splitter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chaos\cs_buf_writer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chaos\cs_dlist.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chaos\cs_fast_buf_splitter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chaos\cs_linked_hash_map.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chaos\cs_list.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chaos\cs_pingpong_buf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chaos\cs_ring_buf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chaos\cs_utils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chaos\cs_algorithm.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\chaos\cs_crc32.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
