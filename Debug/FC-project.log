@@ -1,0 +1,198 @@
+﻿生成启动时间为 2019/6/3 19:03:57。
+     1>项目“C:\Users\Administrator\Desktop\Code files\fp2000\FC-project.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\FC-project.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt 3rdparty\banana\test\cmockery.c 3rdparty\banana\test\inszt_cmockery.c 3rdparty\banana\test\inszt_ut_inet.c 3rdparty\banana\test\inszt_ut_main.c 3rdparty\banana\test\inszt_ut_mutex.c 3rdparty\banana\test\inszt_ut_register.c 3rdparty\banana\test\inszt_ut_task.c 3rdparty\banana\test\ut_inet.c 3rdparty\banana\test\ut_main.c 3rdparty\banana\test\ut_mutex.c 3rdparty\banana\test\ut_register.c 3rdparty\banana\test\ut_task.c 3rdparty\chaos\test\cmockery.c 3rdparty\chaos\test\inszt_cmockery.c 3rdparty\chaos\test\inszt_ut_algo.c 3rdparty\chaos\test\inszt_ut_buf_splitter.c 3rdparty\chaos\test\inszt_ut_buf_writer.c 3rdparty\chaos\test\inszt_ut_dlist.c 3rdparty\chaos\test\inszt_ut_fast_buf_splitter.c 3rdparty\chaos\test\inszt_ut_linked_hash_map.c 3rdparty\chaos\test\inszt_ut_list.c 3rdparty\chaos\test\inszt_ut_main.c 3rdparty\chaos\test\inszt_ut_pingpong_buf.c 3rdparty\chaos\test\inszt_ut_ring_buf.c 3rdparty\chaos\test\ut_algo.c 3rdparty\chaos\test\ut_buf_splitter.c 3rdparty\chaos\test\ut_buf_writer.c 3rdparty\chaos\test\ut_dlist.c 3rdparty\chaos\test\ut_fast_buf_splitter.c 3rdparty\chaos\test\ut_linked_hash_map.c 3rdparty\chaos\test\ut_list.c 3rdparty\chaos\test\ut_main.c 3rdparty\chaos\test\ut_pingpong_buf.c 3rdparty\chaos\test\ut_ring_buf.c project\vs\inszt_main.c project\vs\main.c src\config_mgr.c src\dev_context.c src\dev_mgr.c src\fh228_api.c src\inszt_dev_mgr.c src\inszt_fh228_api.c src\inszt_read.c src\inszt_send_que.c src\inszt_utils.c src\period_msg.c src\read.c src\recv_que.c src\recv_que_mgr.c src\recv_task.c src\reg.c src\send_que.c src\send_que_mgr.c src\statistics.c src\statistics_fpga.c src\utils.c src\write.c test\case.c test\case1.c test\case11.c test\case12.c test\case2.c test\case3.c test\case4.c test\case5.c test\case6.c test\case7.c test\case9.c test\inszt_case.c test\inszt_case1.c test\inszt_case11.c test\inszt_case12.c test\inszt_case2.c test\inszt_case3.c test\inszt_case4.c test\inszt_case5.c test\inszt_case6.c test\inszt_case7.c test\inszt_case9.c
+         inszt_case9.c
+     1>test\inszt_case9.c(7): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         inszt_case7.c
+     1>test\inszt_case7.c(7): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         inszt_case6.c
+     1>test\inszt_case6.c(7): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         inszt_case5.c
+     1>test\inszt_case5.c(7): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         inszt_case4.c
+     1>test\inszt_case4.c(7): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         inszt_case3.c
+     1>test\inszt_case3.c(7): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         inszt_case2.c
+     1>test\inszt_case2.c(7): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         inszt_case12.c
+     1>test\inszt_case12.c(7): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         inszt_case11.c
+     1>test\inszt_case11.c(7): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         inszt_case1.c
+     1>test\inszt_case1.c(7): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         inszt_case.c
+     1>test\inszt_case.c(7): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         case9.c
+     1>test\case9.c(1): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         case7.c
+     1>test\case7.c(1): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         case6.c
+     1>test\case6.c(1): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         case5.c
+     1>test\case5.c(1): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         case4.c
+     1>test\case4.c(1): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         case3.c
+     1>test\case3.c(1): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         case2.c
+     1>test\case2.c(1): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         case12.c
+     1>test\case12.c(1): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         case11.c
+     1>test\case11.c(1): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         正在生成代码...
+         正在编译...
+         case1.c
+     1>test\case1.c(1): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         case.c
+     1>test\case.c(1): fatal error C1083: 无法打开包括文件:“fh228/fh228_api.h”: No such file or directory
+         write.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         utils.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         statistics_fpga.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         statistics.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         send_que_mgr.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         send_que.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         reg.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         recv_task.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         recv_que_mgr.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         recv_que.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         read.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         period_msg.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         inszt_utils.c
+     1>src\inszt_utils.c(147): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         inszt_send_que.c
+     1>src\inszt_send_que.c(147): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         inszt_read.c
+     1>src\inszt_read.c(147): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         inszt_fh228_api.c
+     1>src\inszt_fh228_api.c(147): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         inszt_dev_mgr.c
+     1>src\inszt_dev_mgr.c(147): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         fh228_api.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         正在生成代码...
+         正在编译...
+         dev_mgr.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         dev_context.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         config_mgr.c
+     1>c:\users\administrator\desktop\code files\fp2000\src\common_header.h(16): fatal error C1083: 无法打开包括文件:“vxworks.h”: No such file or directory
+         main.c
+         inszt_main.c
+     1>project\vs\inszt_main.c(603): warning C4101: “dirn”: 未引用的局部变量
+     1>project\vs\inszt_main.c(603): warning C4101: “depth”: 未引用的局部变量
+     1>project\vs\inszt_main.c(752): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>project\vs\inszt_main.c(756): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>project\vs\inszt_main.c(873): warning C4101: “i”: 未引用的局部变量
+         ut_ring_buf.c
+     1>3rdparty\chaos\test\ut_ring_buf.c(1): fatal error C1083: 无法打开包括文件:“chaos/cs_ring_buf.h”: No such file or directory
+         ut_pingpong_buf.c
+     1>3rdparty\chaos\test\ut_pingpong_buf.c(2): fatal error C1083: 无法打开包括文件:“chaos/cs_pingpong_buf.h”: No such file or directory
+         ut_main.c
+         ut_list.c
+     1>3rdparty\chaos\test\ut_list.c(2): fatal error C1083: 无法打开包括文件:“chaos/cs_list.h”: No such file or directory
+         ut_linked_hash_map.c
+     1>3rdparty\chaos\test\ut_linked_hash_map.c(1): fatal error C1083: 无法打开包括文件:“chaos/cs_linked_hash_map.h”: No such file or directory
+         ut_fast_buf_splitter.c
+     1>3rdparty\chaos\test\ut_fast_buf_splitter.c(1): fatal error C1083: 无法打开包括文件:“chaos/cs_fast_buf_splitter.h”: No such file or directory
+         ut_dlist.c
+     1>3rdparty\chaos\test\ut_dlist.c(1): fatal error C1083: 无法打开包括文件:“chaos/cs_dlist.h”: No such file or directory
+         ut_buf_writer.c
+     1>3rdparty\chaos\test\ut_buf_writer.c(1): fatal error C1083: 无法打开包括文件:“chaos/cs_buf_writer.h”: No such file or directory
+         ut_buf_splitter.c
+     1>3rdparty\chaos\test\ut_buf_splitter.c(1): fatal error C1083: 无法打开包括文件:“chaos/cs_buf_splitter.h”: No such file or directory
+         ut_algo.c
+     1>3rdparty\chaos\test\ut_algo.c(2): fatal error C1083: 无法打开包括文件:“chaos/cs_algorithm.h”: No such file or directory
+         inszt_ut_ring_buf.c
+     1>3rdparty\chaos\test\inszt_ut_ring_buf.c(7): fatal error C1083: 无法打开包括文件:“chaos/cs_ring_buf.h”: No such file or directory
+         inszt_ut_pingpong_buf.c
+     1>3rdparty\chaos\test\inszt_ut_pingpong_buf.c(722): fatal error C1083: 无法打开包括文件:“chaos/cs_pingpong_buf.h”: No such file or directory
+         inszt_ut_main.c
+     1>3rdparty\chaos\test\inszt_ut_main.c(1186): warning C4101: “dirn”: 未引用的局部变量
+     1>3rdparty\chaos\test\inszt_ut_main.c(1186): warning C4101: “depth”: 未引用的局部变量
+     1>3rdparty\chaos\test\inszt_ut_main.c(1335): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>3rdparty\chaos\test\inszt_ut_main.c(1339): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>3rdparty\chaos\test\inszt_ut_main.c(1456): warning C4101: “i”: 未引用的局部变量
+         inszt_ut_list.c
+     1>3rdparty\chaos\test\inszt_ut_list.c(722): fatal error C1083: 无法打开包括文件:“chaos/cs_list.h”: No such file or directory
+         inszt_ut_linked_hash_map.c
+     1>3rdparty\chaos\test\inszt_ut_linked_hash_map.c(7): fatal error C1083: 无法打开包括文件:“chaos/cs_linked_hash_map.h”: No such file or directory
+         正在生成代码...
+         正在编译...
+         inszt_ut_fast_buf_splitter.c
+     1>3rdparty\chaos\test\inszt_ut_fast_buf_splitter.c(7): fatal error C1083: 无法打开包括文件:“chaos/cs_fast_buf_splitter.h”: No such file or directory
+         inszt_ut_dlist.c
+     1>3rdparty\chaos\test\inszt_ut_dlist.c(7): fatal error C1083: 无法打开包括文件:“chaos/cs_dlist.h”: No such file or directory
+         inszt_ut_buf_writer.c
+     1>3rdparty\chaos\test\inszt_ut_buf_writer.c(7): fatal error C1083: 无法打开包括文件:“chaos/cs_buf_writer.h”: No such file or directory
+         inszt_ut_buf_splitter.c
+     1>3rdparty\chaos\test\inszt_ut_buf_splitter.c(7): fatal error C1083: 无法打开包括文件:“chaos/cs_buf_splitter.h”: No such file or directory
+         inszt_ut_algo.c
+     1>3rdparty\chaos\test\inszt_ut_algo.c(722): fatal error C1083: 无法打开包括文件:“chaos/cs_algorithm.h”: No such file or directory
+         inszt_cmockery.c
+     1>3rdparty\chaos\test\inszt_cmockery.c(969): error C2065: “SIGBUS”: 未声明的标识符
+     1>3rdparty\chaos\test\inszt_cmockery.c(969): error C2099: 初始值设定项不是常量
+     1>3rdparty\chaos\test\inszt_cmockery.c(969): error C2065: “SIGSYS”: 未声明的标识符
+     1>3rdparty\chaos\test\inszt_cmockery.c(969): error C2099: 初始值设定项不是常量
+     1>3rdparty\chaos\test\inszt_cmockery.c(4429): warning C4013: “strsignal”未定义；假设外部返回 int
+         cmockery.c
+     1>3rdparty\chaos\test\cmockery.c(1534): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : 参见“_vsnprintf”的声明
+     1>3rdparty\chaos\test\cmockery.c(1544): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : 参见“_vsnprintf”的声明
+         ut_task.c
+     1>c:\users\administrator\desktop\code files\fp2000\3rdparty\banana\test\ut_header.h(7): fatal error C1083: 无法打开包括文件:“banana/ba_inet.h”: No such file or directory
+         ut_register.c
+         ut_mutex.c
+     1>c:\users\administrator\desktop\code files\fp2000\3rdparty\banana\test\ut_header.h(7): fatal error C1083: 无法打开包括文件:“banana/ba_inet.h”: No such file or directory
+         ut_main.c
+     1>c:\users\administrator\desktop\code files\fp2000\3rdparty\banana\test\ut_header.h(7): fatal error C1083: 无法打开包括文件:“banana/ba_inet.h”: No such file or directory
+         ut_inet.c
+     1>c:\users\administrator\desktop\code files\fp2000\3rdparty\banana\test\ut_header.h(7): fatal error C1083: 无法打开包括文件:“banana/ba_inet.h”: No such file or directory
+         inszt_ut_task.c
+     1>3rdparty\banana\test\inszt_ut_task.c(685): fatal error C1083: 无法打开包括文件:“banana/ba_inet.h”: No such file or directory
+         inszt_ut_register.c
+         inszt_ut_mutex.c
+     1>3rdparty\banana\test\inszt_ut_mutex.c(685): fatal error C1083: 无法打开包括文件:“banana/ba_inet.h”: No such file or directory
+         inszt_ut_main.c
+     1>3rdparty\banana\test\inszt_ut_main.c(688): fatal error C1083: 无法打开包括文件:“banana/ba_inet.h”: No such file or directory
+         inszt_ut_inet.c
+     1>3rdparty\banana\test\inszt_ut_inet.c(685): fatal error C1083: 无法打开包括文件:“banana/ba_inet.h”: No such file or directory
+         inszt_cmockery.c
+     1>3rdparty\banana\test\inszt_cmockery.c(969): error C2065: “SIGBUS”: 未声明的标识符
+     1>3rdparty\banana\test\inszt_cmockery.c(969): error C2099: 初始值设定项不是常量
+     1>3rdparty\banana\test\inszt_cmockery.c(969): error C2065: “SIGSYS”: 未声明的标识符
+     1>3rdparty\banana\test\inszt_cmockery.c(969): error C2099: 初始值设定项不是常量
+     1>3rdparty\banana\test\inszt_cmockery.c(4429): warning C4013: “strsignal”未定义；假设外部返回 int
+         cmockery.c
+     1>3rdparty\banana\test\cmockery.c(1534): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : 参见“_vsnprintf”的声明
+     1>3rdparty\banana\test\cmockery.c(1544): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : 参见“_vsnprintf”的声明
+         正在生成代码...
+     1>已完成生成项目“C:\Users\Administrator\Desktop\Code files\fp2000\FC-project.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:04.37
