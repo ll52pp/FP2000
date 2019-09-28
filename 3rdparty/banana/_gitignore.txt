@@ -1,0 +1,13 @@
+/demo/vs2017/.vs
+/demo/vs2017/Debug
+/demo/vs2017/x64
+/demo/vs2017/test/Debug
+/demo/vs2017/test/x64
+/demo/vs2017/test/*.user
+/test/vs2017/.vs
+/test/vs2017/ut-test-banana.vcxproj.filters
+/test/vs2017/Debug
+/test/vs2017/*.user
+/test/vs2017/Release
+/test/vs2017/*.db
+/test/vs2017/*.opendb
