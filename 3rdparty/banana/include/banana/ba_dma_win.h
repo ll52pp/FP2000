@@ -6,7 +6,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
+、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、发货 发的
 typedef struct
 {
     void*           virtualAddr;

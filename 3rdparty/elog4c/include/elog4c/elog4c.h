@@ -23,20 +23,20 @@
 #include <linux/module.h>
 #define elog_print_impl(format, arg...) printk(KERN_DEBUG format, ## arg)
 #else
-// Ä¿Ç°ÔİÎ´ÊµÏÖ´ËÆ½Ì¨¹¦ÄÜ, ÄãĞèÒª×Ô¶¨Òåºêelog_print_implÀ´ÊµÏÖprintfÒ»ÑùµÄ´òÓ¡¹¦ÄÜ
+// ç›®å‰æš‚æœªå®ç°æ­¤å¹³å°åŠŸèƒ½, ä½ éœ€è¦è‡ªå®šä¹‰å®elog_print_implæ¥å®ç°printfä¸€æ ·çš„æ‰“å°åŠŸèƒ½
 #error "elog4c: sorroy, elog4c is not support on your platform"
 #endif
 
 
-#define ELOG_FILTER_TAG_MAX_LEN 32  ///< ÈÕÖ¾±êÇ©µÄ×î´ó³¤¶È
-#define ELOG_MAX_LOG_STRING_LEN 512 ///< ÈÕÖ¾ÄÚÈİµÄ×î´ó³¤¶È
+#define ELOG_FILTER_TAG_MAX_LEN 32  ///< æ—¥å¿—æ ‡ç­¾çš„æœ€å¤§é•¿åº¦
+#define ELOG_MAX_LOG_STRING_LEN 512 ///< æ—¥å¿—å†…å®¹çš„æœ€å¤§é•¿åº¦
 
-// Äã¿ÉÒÔÔÚ×Ô¼ºµÄ¹¤³ÌÖĞ¶¨ÒåºêELOG_OUTPUT_LEVELÀ´¹ıÂË²»Í¬µÈ¼¶µÄÈÕÖ¾
+// ä½ å¯ä»¥åœ¨è‡ªå·±çš„å·¥ç¨‹ä¸­å®šä¹‰å®ELOG_OUTPUT_LEVELæ¥è¿‡æ»¤ä¸åŒç­‰çº§çš„æ—¥å¿—
 #ifndef ELOG_OUTPUT_LEVEL
 #define ELOG_OUTPUT_LEVEL ELOG_LVL_VERBOSE
 #endif
 
-// Äã¿ÉÒÔÔÚ×Ô¼ºµÄ¹¤³ÌÖĞ¶¨ÒåºêELOG_OUTPUT_TAGÀ´¹ıÂË²»Í¬±êÇ©µÄÈÕÖ¾
+// ä½ å¯ä»¥åœ¨è‡ªå·±çš„å·¥ç¨‹ä¸­å®šä¹‰å®ELOG_OUTPUT_TAGæ¥è¿‡æ»¤ä¸åŒæ ‡ç­¾çš„æ—¥å¿—
 #ifndef ELOG_OUTPUT_TAG
 #define ELOG_OUTPUT_TAG ""
 #endif
@@ -86,14 +86,14 @@ static void elog_print(const elog_level level, const char *tag, const char *file
     }
 
     va_start(args, format);
-//ÓÃÒÔ4996¾¯¸æ±»ºöÂÔ
+//ç”¨ä»¥4996è­¦å‘Šè¢«å¿½ç•¥
 #if defined(_WIN32)
-#pragma warning(push)//±£´æ±àÒëÆ÷×´Ì¬
+#pragma warning(push)//ä¿å­˜ç¼–è¯‘å™¨çŠ¶æ€
 #pragma warning(disable:4996)
 #endif
     vsnprintf(content, ELOG_MAX_LOG_STRING_LEN, format, args);
 #if defined(_WIN32)
-#pragma warning(pop)//»Ö¸´±àÒëÆ÷×´Ì¬
+#pragma warning(pop)//æ¢å¤ç¼–è¯‘å™¨çŠ¶æ€
 #endif
 
     va_end(args);

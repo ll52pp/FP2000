@@ -47,5 +47,5 @@ typedef unsigned long long  UINT64;
 typedef long long           INT64;
 #endif
 
-// Ò»Ğ©³£ÓÃµÄÊı¾İÀàĞÍ, ÈçUINT32, size_t, boolµÈµÄÍ·ÎÄ¼ş
+// ä¸€äº›å¸¸ç”¨çš„æ•°æ®ç±»å‹, å¦‚UINT32, size_t, boolç­‰çš„å¤´æ–‡ä»¶
 #endif
