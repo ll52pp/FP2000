@@ -1,0 +1,11 @@
+Debug
+Release
+.vs
+*.obj
+*.tlog
+*.log
+*.pdb
+*.idb
+*.user
+*.opendb
+*.db
