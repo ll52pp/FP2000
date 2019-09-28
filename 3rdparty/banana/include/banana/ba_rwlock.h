@@ -8,7 +8,7 @@ typedef struct
 {
     BaMutexContext rlock;
     BaMutexContext wlock;
-    int rCount; // ¶ÁÕß¸öÊý
+    int rCount; //???
 } BaRwLockContext;
 
 static bool Ba_RwLockInit(BaRwLockContext* ctx)
