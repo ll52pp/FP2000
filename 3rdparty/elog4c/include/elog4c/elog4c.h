@@ -86,7 +86,7 @@ static void elog_print(const elog_level level, const char *tag, const char *file
     }
 
     va_start(args, format);
-//4996警告被忽略
+//用以4996警告被忽略
 #if defined(_WIN32)
 #pragma warning(push)//保存编译器状态
 #pragma warning(disable:4996)
