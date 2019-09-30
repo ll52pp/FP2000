@@ -1,8 +1,8 @@
 /**
  * @file
- * @brief µ¥ÏòÁ´±í
+ * @brief å•å‘é“¾è¡¨
  *
- * ÊÊÓÃÓÚÍ·²¿´óÁ¿Ôö¼Ó,É¾³ı²Ù×÷, Î²²¿Ö»Ö§³ÖÔö¼Ó²Ù×÷, ÖĞ¼ä²åÈë²Ù×÷
+ * é€‚ç”¨äºå¤´éƒ¨å¤§é‡å¢åŠ ,åˆ é™¤æ“ä½œ, å°¾éƒ¨åªæ”¯æŒå¢åŠ æ“ä½œ, ä¸­é—´æ’å…¥æ“ä½œ
  * @author yaoyuliang(765495939@qq.com)
  */
 
@@ -17,17 +17,17 @@ extern "C" {
 
 typedef struct CsListLinkTag
 {
-    struct CsListLinkTag *next; ///< Ö¸ÏòÏÂÒ»½Úµã
+    struct CsListLinkTag *next; ///< æŒ‡å‘ä¸‹ä¸€èŠ‚ç‚¹
 } CsListLink;
 
 typedef struct
 {
-    struct CsListLinkTag*   head;  ///< Í·
-    struct CsListLinkTag*   tail;  ///< Î²
-    int                     count; ///< ½Úµã¸öÊı
+    struct CsListLinkTag*   head;  ///< å¤´
+    struct CsListLinkTag*   tail;  ///< å°¾
+    int                     count; ///< èŠ‚ç‚¹ä¸ªæ•°
 } CsListContext;
 
-#define CS_LIST_NODE_OBJECT CsListLink _csLink ///< Äã×Ô¶¨ÒåµÄ½Úµã½á¹¹Ìå, ±ØĞëÔÚ³ÉÔ±±äÁ¿µÄ×îÇ°Ãæ¼ÓÉÏÕâ¸öºê
+#define CS_LIST_NODE_OBJECT CsListLink _csLink ///< ä½ è‡ªå®šä¹‰çš„èŠ‚ç‚¹ç»“æ„ä½“, å¿…é¡»åœ¨æˆå‘˜å˜é‡çš„æœ€å‰é¢åŠ ä¸Šè¿™ä¸ªå®
 #define _CS_CAST2LIST_NODE(x) ((CsListLink*)(x))
 
 static void  Cs_ListInit(CsListContext *context);
@@ -43,19 +43,19 @@ static void* Cs_ListPeekFront(CsListContext *context);
 
 /**
  * @fn Cs_ListNodeFree
- * @brief ÊÍ·Å½Úµã
- * @param [in] context ÉÏÏÂÎÄ
- * @param [in] node ½ÚµãÊ×µØÖ·
+ * @brief é‡Šæ”¾èŠ‚ç‚¹
+ * @param [in] context ä¸Šä¸‹æ–‡
+ * @param [in] node èŠ‚ç‚¹é¦–åœ°å€
  */
 #define Cs_ListNodeFree(node) Cs_Free(node)
 
 
 //////////////////////////////////////////////////////////////////////////
-// ÒÔÏÂÊÇº¯ÊıÊµÏÖ²¿·Ö...
+// ä»¥ä¸‹æ˜¯å‡½æ•°å®ç°éƒ¨åˆ†...
 
 /**
- * @brief ³õÊ¼»¯
- * @param [in] context ÉÏÏÂÎÄ
+ * @brief åˆå§‹åŒ–
+ * @param [in] context ä¸Šä¸‹æ–‡
  */
 static void Cs_ListInit(CsListContext *context)
 {
@@ -64,8 +64,8 @@ static void Cs_ListInit(CsListContext *context)
     context->count = 0;
 }
 /**
- * @brief ·´³õÊ¼»¯Á´±í, ÊÍ·ÅËùÓĞÁ´±íÉÏµÄ½Úµã
- * @param [in] context ÉÏÏÂÎÄ
+ * @brief ååˆå§‹åŒ–é“¾è¡¨, é‡Šæ”¾æ‰€æœ‰é“¾è¡¨ä¸Šçš„èŠ‚ç‚¹
+ * @param [in] context ä¸Šä¸‹æ–‡
  */
 static void Cs_ListUninit(CsListContext *context)
 {
@@ -85,9 +85,9 @@ static void Cs_ListUninit(CsListContext *context)
 }
 
 /**
- * @brief ´´½¨Ò»¸öĞÂ½Úµã
- * @param [in] nodeSize ½Úµã´óĞ¡
- * @return ½ÚµãÊ×µØÖ·
+ * @brief åˆ›å»ºä¸€ä¸ªæ–°èŠ‚ç‚¹
+ * @param [in] nodeSize èŠ‚ç‚¹å¤§å°
+ * @return èŠ‚ç‚¹é¦–åœ°å€
  */
 static void* Cs_ListNodeMalloc(unsigned int nodeSize)
 {
@@ -97,10 +97,10 @@ static void* Cs_ListNodeMalloc(unsigned int nodeSize)
 }
 
 /**
- * @brief ÔÚºó·½²åÈë½Úµã
- * @param [in] context Á´±ícontext
- * @param [in] prev ĞèÒª±»²åÈëµÄÎ»ÖÃ, ½«ÔÚÕâ¸ö½ÚµãµÄºó·½²åÈë
- * @param [in] node ´ı²åÈë½øÁ´±íµÄ½Úµã
+ * @brief åœ¨åæ–¹æ’å…¥èŠ‚ç‚¹
+ * @param [in] context é“¾è¡¨context
+ * @param [in] prev éœ€è¦è¢«æ’å…¥çš„ä½ç½®, å°†åœ¨è¿™ä¸ªèŠ‚ç‚¹çš„åæ–¹æ’å…¥
+ * @param [in] node å¾…æ’å…¥è¿›é“¾è¡¨çš„èŠ‚ç‚¹
  */
 static void Cs_ListInsert(CsListContext *context, void *prev, void *node)
 {
@@ -127,9 +127,9 @@ static void Cs_ListInsert(CsListContext *context, void *prev, void *node)
 }
 
 /**
- * @brief ½«½Úµã×·¼Óµ½Á´±íµÄÎ²²¿
- * @param [in] context ÉÏÏÂÎÄ
- * @param [in] node ½ÚµãÊ×µØÖ·
+ * @brief å°†èŠ‚ç‚¹è¿½åŠ åˆ°é“¾è¡¨çš„å°¾éƒ¨
+ * @param [in] context ä¸Šä¸‹æ–‡
+ * @param [in] node èŠ‚ç‚¹é¦–åœ°å€
  */
 static void Cs_ListPushBack(CsListContext *context, void *node)
 {
@@ -137,9 +137,9 @@ static void Cs_ListPushBack(CsListContext *context, void *node)
 }
 
 /**
- * @brief ½«½Úµã²åÈëÁ´±íµÄÍ·²¿
- * @param [in] context ÉÏÏÂÎÄ
- * @param [in] node ½ÚµãÊ×µØÖ·
+ * @brief å°†èŠ‚ç‚¹æ’å…¥é“¾è¡¨çš„å¤´éƒ¨
+ * @param [in] context ä¸Šä¸‹æ–‡
+ * @param [in] node èŠ‚ç‚¹é¦–åœ°å€
  */
 static void Cs_ListPushFront(CsListContext *context, void *node)
 {
@@ -157,9 +157,9 @@ static void Cs_ListPushFront(CsListContext *context, void *node)
 }
 
 /**
- * @brief µ¯³öÁ´±íµÄÍ·½Úµã, ¼´ÒÆ³ıµÚÒ»¸ö½Úµã
- * @param [in] context ÉÏÏÂÎÄ
- * @return µ¯³öµÄÍ·½ÚµãµÄµØÖ·
+ * @brief å¼¹å‡ºé“¾è¡¨çš„å¤´èŠ‚ç‚¹, å³ç§»é™¤ç¬¬ä¸€ä¸ªèŠ‚ç‚¹
+ * @param [in] context ä¸Šä¸‹æ–‡
+ * @return å¼¹å‡ºçš„å¤´èŠ‚ç‚¹çš„åœ°å€
  */
 static void* Cs_ListPopFront(CsListContext *context)
 {
@@ -179,9 +179,9 @@ static void* Cs_ListPopFront(CsListContext *context)
 }
 
 /**
- * @brief »ñÈ¡Á´±í½ÚµãµÄ¸öÊı
- * @param [in] context ÉÏÏÂÎÄ
- * @return ½ÚµãµÄ¸öÊı
+ * @brief è·å–é“¾è¡¨èŠ‚ç‚¹çš„ä¸ªæ•°
+ * @param [in] context ä¸Šä¸‹æ–‡
+ * @return èŠ‚ç‚¹çš„ä¸ªæ•°
  */
 static int Cs_ListGetSize(CsListContext *context)
 {
@@ -189,9 +189,9 @@ static int Cs_ListGetSize(CsListContext *context)
 }
 
 /**
- * @brief »ñÈ¡Ö¸¶¨½Úµã¶ÔÓ¦µÄÏÂÒ»¸ö½ÚµãµØÖ·
- * @param [in] node Ö¸¶¨½ÚµãµÄÊ×µØÖ·
- * @return ÏÂÒ»¸ö½ÚµãµÄÊ×µØÖ·
+ * @brief è·å–æŒ‡å®šèŠ‚ç‚¹å¯¹åº”çš„ä¸‹ä¸€ä¸ªèŠ‚ç‚¹åœ°å€
+ * @param [in] node æŒ‡å®šèŠ‚ç‚¹çš„é¦–åœ°å€
+ * @return ä¸‹ä¸€ä¸ªèŠ‚ç‚¹çš„é¦–åœ°å€
  */
 static void* Cs_ListNext(void *node)
 {
@@ -199,10 +199,10 @@ static void* Cs_ListNext(void *node)
 }
 
 /**
- * @brief »ñÈ¡Á´±íµÄÍ·½Úµã
- * @param [in] context ÉÏÏÂÎÄ
- * @attention ×¢Òâ, peekºÍpopµÄÇø±ğÔÚÓÚ, pop»á½«½Úµã´ÓÁ´±íÖĞÒÆ³ı, ¶øpeek²»»á
- * @return Í·½ÚµãÊ×µØÖ·
+ * @brief è·å–é“¾è¡¨çš„å¤´èŠ‚ç‚¹
+ * @param [in] context ä¸Šä¸‹æ–‡
+ * @attention æ³¨æ„, peekå’Œpopçš„åŒºåˆ«åœ¨äº, popä¼šå°†èŠ‚ç‚¹ä»é“¾è¡¨ä¸­ç§»é™¤, è€Œpeekä¸ä¼š
+ * @return å¤´èŠ‚ç‚¹é¦–åœ°å€
  */
 static void* Cs_ListPeekFront(CsListContext *context)
 {
