@@ -9,10 +9,10 @@ extern "C" {
 
 
 /**
- * @brief ¼ÆËã×Ö½Ú¶ÔÆë
- * @param [in] size Êı¾İ´óĞ¡
- * @param [in] align ¶ÔÆë´óĞ¡
- * @return ¶ÔÆëºóµÄ´óĞ¡
+ * @briefç€›æ¥„å¦­ç€µå½’ç¶ˆ
+ * @param [in] size éç‰ˆåµæ¾¶Ñƒçš¬
+ * @param [in] align ç€µå½’ç¶ˆæ¾¶Ñƒçš¬
+ * @return ç€µå½’ç¶ˆéšåº£æ®‘æ¾¶Ñƒçš¬
  */
 static size_t Cs_CalcByteAlignment(const size_t size, const size_t align) {
     assert(align <= (30 * 1024 * 1024));
