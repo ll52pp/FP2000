@@ -194,17 +194,17 @@ void Cfg_SetFpgaTxHdr(FpgaRegBaseAddr* reg, const ChnProp* chn)
     Reg_WriteIndirectAddrStruct32(reg, addr + 11, direct, st);
 }
 
-// void Cfg_SetFpgaChannel(FpgaRegBaseAddr* reg, const ChnProp* chn)
-// {
-//     FpgaChannelMsg msg;
-//     ZeroStruct(msg);
-// 
-//     msg.suppress_status = chn->s_suppressStatus;
-//     msg.retry = chn->s_retryNum;
-//     msg.tr = chn->s_tr;
-// 
-//     Reg_WriteIndirectAddrStruct32(reg, FPGA_REG_ADDR_CHANNEL_MSG_BUF + chn->msgNo, 1, msg);
-// }
+void Cfg_SetFpgaChannel(FpgaRegBaseAddr* reg, const ChnProp* chn)
+{
+    FpgaChannelMsg msg;
+    ZeroStruct(msg);
+
+    msg.suppress_status = chn->s_suppressStatus;
+    msg.retry = chn->s_retryNum;
+    msg.tr = chn->s_tr;
+
+    Reg_WriteIndirectAddrStruct32(reg, FPGA_REG_ADDR_CHANNEL_MSG_BUF + chn->msgNo, 1, msg);
+}
 
 static void _Cfg_ClearConditionHashReg(FpgaRegBaseAddr *reg)
 {
